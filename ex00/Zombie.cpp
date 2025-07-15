@@ -13,12 +13,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-Zombie::Zombie()
+Zombie::Zombie(std::string name) : name(name)
 {
 }
 
 Zombie::~Zombie()
 {
+    std::cout << "Destructor call for: " << this->name << std::endl;
 }
 
 void Zombie::announce(void)

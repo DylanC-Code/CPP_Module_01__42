@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcastor <dcastor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 14:45:35 by dcastor           #+#    #+#             */
-/*   Updated: 2025/07/15 17:21:51 by dcastor          ###   ########.fr       */
+/*   Created: 2025/07/15 14:45:18 by dcastor           #+#    #+#             */
+/*   Updated: 2025/07/15 17:32:52 by dcastor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-#include <string>
+#include "Zombie.hpp"
 
-#ifndef __ZOMBIE_H__
-#define __ZOMBIE_H__
+Zombie *newZombie(std::string name);
+void randomChump(std::string name);
 
-class Zombie
+int main()
 {
-private:
-	std::string name;
+    Zombie *dd_zomzom = newZombie("DD");
+    randomChump("TOTO");
+    dd_zomzom->announce();
+    delete dd_zomzom;
 
-public:
-	Zombie(std::string name);
-	~Zombie();
-	void announce(void);
-};
-
-#endif
+    return 0;
+}
