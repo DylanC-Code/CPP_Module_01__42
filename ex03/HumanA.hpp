@@ -6,22 +6,24 @@
 /*   By: dcastor <dcastor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 10:45:16 by dcastor           #+#    #+#             */
-/*   Updated: 2025/07/16 10:49:26 by dcastor          ###   ########.fr       */
+/*   Updated: 2025/07/16 11:08:12 by dcastor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef __HUMANA__
+#define __HUMANA__
+
 #include <string>
-#ifndef __HUMAN_A__
-#define __HUMAN_A__
+#include "Weapon.hpp"
 
 class HumanA
 {
 private:
     std::string name;
-    std::string weapon_type;
+    Weapon &weapon_type;
 
 public:
-    HumanA(const std::string &name, const std::string &weapon_type);
+    HumanA(const std::string &name, Weapon &weapon_type);
     ~HumanA();
     void attack();
 };
