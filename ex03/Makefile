@@ -6,7 +6,7 @@
 #    By: dcastor <dcastor@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/09 14:36:04 by dcastor           #+#    #+#              #
-#    Updated: 2025/07/16 10:33:35 by dcastor          ###   ########.fr        #
+#    Updated: 2025/07/16 11:07:46 by dcastor          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ RM := rm -rf
 SRCS := main.cpp \
 		Weapon.cpp \
 		HumanA.cpp \
-		HumanB.cpp \
+		HumanB.cpp
 OBJS := $(SRCS:.cpp=.o)
 
 
